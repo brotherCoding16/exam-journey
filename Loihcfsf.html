@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="Login.css">
+</head>
+<body>
+  <br><br><br><br><br><br><br><br><br> 
+<div class="container">
+<div class="header">
+
+ <h1>Login To Exam</h1>
+ </div>
+
+ <form name="login" onsubmit="return validateForm() ;" method="post">
+
+ Username:<br> <input class="username" type="text" name="username" id="user"><br>
+
+
+ Password: <br><input class="password" type="password" name="password"id="pass">  <br>  <br> 
+ 
+<input type="button" class="submit" value="Log In" name="submit" onclick="validate()"><br><br>
+<a href="forgot.html" class="a">forgot password</a>
+</form>
+</div>
+
+<script>
+
+var count= 2;
+
+function validate()
+{
+	var un = document. getElementbyId(user).valid;
+	var pw = document. getElementbyId(pass).valid;
+	
+	var valid = false;
+	var usernameArray = ["Vlad", "afiq16"];
+	var passwordArray = ["12345","13579"];
+	for (var i = 0; i < usernameArray.length; i++)
+ {
+
+	if ((un == usernameArray[i]) && (pw == passwordArray[i]))
+	{
+		valid = true;
+		break;
+	}
+}
+	if (valid)
+	{
+		window.location.href= "New.html";
+		return false;
+	}
+	else
+	{
+		alert("Incorrect password or username ");
+		
+	}
+}
+
+</script>
+</body>
+</html>
+
