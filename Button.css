@@ -116,3 +116,9 @@ footer{
   font-family: cursive;
   text-shadow:5px 5px  5px #d1a700 ;
 }
+
+.navbar
+{ 
+    display: flex;
+    padding: 20px;
+}
