@@ -20,7 +20,7 @@ ul {
   background-color: green;
   height: 33px;
   font-family: Arial;
-  font-size: 16px;
+  font-size: 17.2px;
   border-style: solid;
   border-color: white ;
 
@@ -30,7 +30,7 @@ li{
  
   float: left;
  
-  border-right:1px solid black;
+  border-right:1px solid green;
   
 }
 a{
@@ -75,14 +75,14 @@ text-decoration: none;
   background-color:pink;
  border-radius:30px;
       text-align: center;
-  font-family;serif;
+  font-family:serif;
  }
   .iv1{
   
   background-color:#0500a1;
  border-radius:36px 0px 36px 0px;
       text-align: center;
-  font-family;serif;
+  font-family:serif;
   
  }
   .div1 {
@@ -99,7 +99,6 @@ footer{
     right:0;
     left:0;
      bottom:0;
-     top: ;
     color: White;
     text-align:center;
   }
@@ -116,9 +115,27 @@ footer{
   font-family: cursive;
   text-shadow:5px 5px  5px #d1a700 ;
 }
-
-.navbar
-{ 
+.navbar ul
+{
     display: flex;
-    padding: 20px;
+    list-style-type: none;
+    padding-left: 100px;
+    align-items: center;
+    
+}
+.navbar ul li
+{
+    list-style: none;
+    font-size: 18px;
+}
+.navbar ul li a
+{
+    display: block;
+    padding: 0px 10px;
+    border-radius: 15px;
+    border-width: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;  
+    margin-left: 150px;  
 }
